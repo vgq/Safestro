@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Safe x Stroberi</title>
+    <link rel="icon" href="icon safe.jpg"
+    <link rel="stylesheet" href="LandingPage.css">
+    <style>
+        body {
+            background-color: #000;
+            color: #fff;
+            font-family: 'Roboto', sans-serif;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        h1 {
+            font-family: 'terminal grotesque';
+            src: url('terminal-grotesque.otf');
+            font-size: 5rem;
+            margin-top: 2rem;
+        }
+
+        .button {
+            display: block;
+            padding: 1rem;
+            margin: 4rem auto;
+            border: none;
+            border-radius: 1rem;
+            font-size: 2rem;
+            text-decoration:none;
+            color: #fff;
+            background-color: #0725289f;
+            transition: background-color 0.3s ease;
+            cursor: pointer;
+            width: 20rem;
+            text-align: center;
+
+        }
+
+        .button:hover {
+            background-color: #cc429e69;
+        }
+        body {
+        background-image: url("pexels-michael-burrows-7125661.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        }
+
+        .button span {
+            cursor: pointer;
+            display: inline-block;
+            position: relative;
+            transition: 0.5s;
+        }
+        .button span::after {
+            content: '\00bb';
+            position: absolute;
+            opacity: 0;
+            top: 0;
+            right: -20px;
+            transition: 0.5s;
+        }
+        .button:hover span {
+            padding-right: 25px;
+        }
+        .button:hover span:after {
+            opacity: 1;
+            right: 0;
+        }
+    footer {
+        margin-top: auto;
+        background-color: #00000070;
+        padding: 0.1px;
+        color: #fff;
+        text-align: center;
+        font-size: 9px;
+    }
+    </style>
+    
+</head>
+<body>
+    <h1>SATU FREKUENSI x STROBERI</h1>
+    <div class="button-container">
+        <a href="https://www.facebook.com" class="button" style="vertical-align:middle"><span>Facebook</span></a>
+        <a href="https://www.instagram.com" class="button" style="vertical-align:middle"><span>Twitter</span></a>
+        <a href="maps.google.com" class="button" style="vertical-align:middle"><span>Location</span></a>
+    </div>
+    <footer>
+        <p>© 2024 Safe x Stroberi | Grotesque by Raphaël Bastide, with the contribution of Jérémy Landes. Distributed by velvetyne.fr | Background pexels-michael-burrows-7125661</p>
+    </footer>
+</body>
