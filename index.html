@@ -14,23 +14,36 @@
             text-align: center;
             display: flex;
             flex-direction: column;
-            min-height: 100vh;
+            height: 100vh;
+            margin: 0;
+            background-image: url("pexels-michael-burrows-7125661.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
         }
 
         h1 {
             font-family: 'terminal grotesque';
             src: url('terminal-grotesque.otf');
-            font-size: 5rem;
-            margin-top: 2rem;
+            font-size: 4rem;
+            margin-top: 0rem;
+            text-align: center;
+            color: #fff;
+            margin: 0rem;
         }
-
+        .button-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        flex-grow: 1;
+        }
         .button {
-            display: block;
+            display: inline-block;
             padding: 1rem;
-            margin: 4rem auto;
+            margin: 1rem auto;
             border: none;
             border-radius: 1rem;
-            font-size: 2rem;
+            font-size: 1rem;
             text-decoration:none;
             color: #fff;
             background-color: #0725289f;
@@ -44,11 +57,7 @@
         .button:hover {
             background-color: #cc429e69;
         }
-        body {
-        background-image: url("pexels-michael-burrows-7125661.jpg");
-        background-repeat: no-repeat;
-        background-size: cover;
-        }
+       
 
         .button span {
             cursor: pointer;
@@ -74,18 +83,31 @@
     footer {
         margin-top: auto;
         background-color: #00000070;
-        padding: 0.1px;
+        padding: 1rem;
         color: #fff;
         text-align: center;
         font-size: 9px;
+    }
+    @media (max-width: 768px) {
+        h1 {
+            font-size: 2rem;
+            margin-top: 1rem;
+        }
+
+        .button {
+            font-size: 1.5rem;
+            width: 15rem;
+        }
     }
     </style>
     
 </head>
 <body>
-    <h1>SATU FREKUENSI x STROBERI</h1>
+    <h1>SATU FREKUENSI</h1>
+    <h1>x</h1>
+    <h1>STROBERI</h1>
     <div class="button-container">
-        <a href="https://https://m.facebook.com/profile.php?id=61552067562173" class="button" style="vertical-align:middle"><span>Facebook</span></a>
+        <a href="https://www.facebook.com/profile.php?id=61552067562173&sk=about" class="button" style="vertical-align:middle"><span>Facebook</span></a>
         <a href="https://www.instagram.com/safexstroberi?utm_source=qr" class="button" style="vertical-align:middle"><span>Instagram</span></a>
         <a href="https://maps.app.goo.gl/zw7QqYk5pbbVpm936?g_st=iw" class="button" style="vertical-align:middle"><span>Location</span></a>
     </div>
